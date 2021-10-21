@@ -4,14 +4,11 @@ import checkVertical
 from checkVertical import check_vertical
 
 def check_win(player_selection, size, board):
-    checkHorizontal = check_horizontal(player_selection, size, board)
-    checkVertical = check_vertical(player_selection, size, board)
-    if checkHorizontal == True:
+    if check_horizontal(player_selection, size, board):
         return True
-    elif checkVertical == True:
+    if check_vertical(player_selection, size, board):
         return True
-    else:
-        return False
+    return False
 
 if __name__ == "__main__":
     size = 9
