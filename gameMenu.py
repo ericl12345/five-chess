@@ -3,7 +3,7 @@ from askBoardLength import ask_board_length
 import getPlayerNames
 from getPlayerNames import get_player_names
 
-def gameMenu(player):
+def game_menu(player):
     while True:
         # Player choice Menu
         print("Turn to choose for {}" .format(player))
@@ -28,7 +28,7 @@ def gameMenu(player):
         return [choice, lengthOfBoard]
 
 if __name__ == "__main__":
-    player = get_player_names
-    result = gameMenu(player)
+    player = get_player_names()
+    result = game_menu(player)
 
     print(result)
