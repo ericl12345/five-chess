@@ -21,11 +21,7 @@ def game_menu(player):
         if (choice < 1 or choice > 3):
             print("Wrong Input!!! Try Again\n")
             continue
-        elif choice == 1 or choice == 2:
-            lengthOfBoard = ask_board_length()
-        else:
-            lengthOfBoard = "q"
-        return [choice, lengthOfBoard]
+        return choice
 
 if __name__ == "__main__":
     player = get_player_names()
