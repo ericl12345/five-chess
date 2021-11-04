@@ -11,17 +11,17 @@ def check_win(player_selection, size, board):
     return False
 
 if __name__ == "__main__":
-    size = 9
+    size = 7
     board = [" " for x in range(size * size)]
 
     a = 0
     board[13:18] = [" " for x  in range(5)]
 
-    board[5*size+a] = "B"
-    board[6*size+a] = "B"
-    board[7*size+a] = "B"
-    board[3*size+a] = "B"
-    board[4*size+a] = "B"
+    board[1] = "B"
+    board[2] = "B"
+    board[3] = "B"
+    board[0] = "B"
+    board[4] = "B"
 
     print(board)
     player_selection = "B"
