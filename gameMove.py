@@ -1,7 +1,7 @@
 import askBoardLength
 from askBoardLength import ask_board_length
 
-def gameMove(cur_player, values):
+def gameMove(cur_player, values, boardLength):
     # Try exception block for MOVE input
     while True:
         try:
