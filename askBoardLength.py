@@ -1,7 +1,6 @@
 def ask_board_length():
     while True:
         try:
-            global boardLength
             boardLength = int(input("How big do you want the side of the board to be?"))
         except ValueError:
             print("Has to be a integer")
