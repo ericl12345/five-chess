@@ -17,7 +17,7 @@ from askBoardLength import ask_board_length
 import printScoreBoard
 from printScoreBoard import print_scoreboard
 
-def single_game(cur_player, player_selection, boardLength):
+def single_game(cur_player, player_selection, boardLength, values, player_pos):
 
     # Game Loop for a single game of Tic Tac Toe
     while True:
@@ -72,10 +72,10 @@ if __name__ == "__main__":
         # Stores the winner in a single game of wu zi qi
         if choice == 1:
             choice_1 = "B"
-            winner = single_game(cur_player ,choice_1, boardLength)
+            winner = single_game(cur_player ,choice_1, boardLength, values, player_pos)
         else:
             choice_1 = "W"
-            winner = single_game(cur_player, choice_1, boardLength)
+            winner = single_game(cur_player, choice_1, boardLength, values, player_pos)
 
         # Edits the scoreboard according to the winner
         if winner == 'D':
